@@ -27,9 +27,9 @@ h3{font-size:1.3rem;font-weight:600}
 .nav{position:sticky;top:0;z-index:50;background:var(--forest);color:#fff;box-shadow:0 1px 0 rgba(0,0,0,.2)}
 .nav__inner{max-width:1280px;margin:0 auto;padding:.7rem clamp(1rem,3vw,2rem);display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:#fff;min-width:0}
-.brand__mark{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#3f8a4f;font-family:var(--head);font-weight:800;font-size:1rem;flex:none}
+.brand__mark{display:block;width:40px;height:40px;border-radius:10px;flex:none;box-shadow:0 0 0 2px rgba(255,255,255,.18)}
 .brand__name{font-family:var(--head);font-weight:800;font-size:1.15rem;white-space:nowrap}
-.nav__links{display:flex;align-items:center;gap:clamp(.9rem,1.6vw,1.6rem);flex-wrap:nowrap}
+.nav__links{display:flex;align-items:center;gap:1.5rem;flex-wrap:nowrap}
 .nav__links a{white-space:nowrap;text-decoration:none;font-weight:500;font-size:.98rem}
 .nav__links a:not(.btn):hover{text-decoration:underline;text-underline-offset:4px}
 .nav__call{padding:.6em 1.1em}
@@ -47,7 +47,7 @@ h3{font-size:1.3rem;font-weight:600}
   .nav__links a:not(.btn){padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:1.05rem}
   .nav__call{margin-top:1rem}
 }
-@media (max-width:359px){.brand__name{font-size:1rem}.brand__mark{width:34px;height:34px}}
+
 
 /* hero */
 .hero{display:grid;grid-template-columns:1fr;background:var(--forest);color:#fff}
@@ -72,7 +72,7 @@ h3{font-size:1.3rem;font-weight:600}
 .trust p:last-child{border-bottom:0}
 .trust strong{display:block;font-family:var(--head);font-size:1.15rem;color:var(--forest)}
 .trust a{color:var(--cedar-d);font-weight:600}
-@media (min-width:860px){.trust__grid{grid-template-columns:repeat(3,1fr);gap:2rem}.trust p{border-bottom:0}}
+@media (min-width:960px){.trust__grid{grid-template-columns:repeat(3,1fr);gap:2rem}.trust p{border-bottom:0}}
 
 /* sections */
 .section{padding:clamp(3.5rem,8vw,6rem) 0}
@@ -121,7 +121,7 @@ h3{font-size:1.3rem;font-weight:600}
 .hours dt{font-weight:600}.hours dd{margin:0}
 .hours__contact{display:flex;flex-direction:column;gap:.4rem;margin:0}
 .hours__contact a{font-weight:600;color:#fff}
-@media (min-width:860px){.area{grid-template-columns:1.4fr 1fr;gap:4rem}}
+@media (min-width:960px){.area{grid-template-columns:1.4fr 1fr;gap:4rem}}
 
 .quote{display:grid;gap:2rem;grid-template-columns:1fr}
 .quote__intro p{color:var(--muted)}
@@ -154,12 +154,26 @@ h3{font-size:1.3rem;font-weight:600}
 .menu-btn__text{white-space:nowrap}
 .nav.is-open{box-shadow:0 12px 30px rgba(0,0,0,.35)}
 @media (max-width:479px){
-  .brand__name{white-space:normal;font-size:1rem;line-height:1.05;max-width:8.5em}
-  .brand__mark{width:36px;height:36px;font-size:.9rem}
+  .brand__mark{width:36px;height:36px}
   .menu-btn{padding:.45rem .8rem;font-size:.95rem}
 }
 @media (max-width:359px){
-  .menu-btn__text{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-  .menu-btn{padding:.6rem}
+  .brand{gap:.45rem}
+  .brand__mark{width:32px;height:32px}
+  .brand__top{font-size:.6rem;letter-spacing:.1em}
+  .brand__main{font-size:1.2rem}
+  .menu-btn{padding:.4rem .6rem;gap:.4rem;font-size:.9rem}
+  .nav__inner{gap:.6rem}
 }
 .form ::placeholder{color:#6b6b6b;opacity:1}
+.btn svg{width:1.15em;height:1.15em;fill:currentColor;flex:none}
+.trust__contact a{display:block;width:max-content;max-width:100%}
+.svc__card li,.gallery figcaption,.pull p{text-wrap:balance}
+.footer__biz p{margin:0 0 .3rem}
+.footer__biz p:last-child{margin:0}
+.footer__inner{align-items:flex-end}
+.brand__name{display:flex;flex-direction:column;line-height:1}
+.brand__top{display:block;font-family:var(--body);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#cfe3d3}
+.brand__main{display:block;font-size:1.35rem;margin-top:.12rem;letter-spacing:-.01em}
+@media (max-width:359px){.gallery figcaption{font-size:.84rem;padding:.55rem .65rem}}
+.form__actions .btn{flex:1 1 12rem}

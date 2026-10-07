@@ -3,6 +3,8 @@ Image credits, Sonoma County Carlos
 All photos are by Sonoma County Carlos, from the Sonoma County Carlos business page on Nextdoor:
 https://nextdoor.com/pages/sonoma-county-carlos-santa-rosa-ca/
 
+Licence plates are blurred.
+
 images/arched-wood-gate.jpg
   https://us1-photo.nextdoor.com/business_gallery/d9/a3/d9a301293ba7edc0a438053a31e3aa87.jpeg
 images/chicken-run-frame.jpg
@@ -39,3 +41,7 @@ images/trimmed-hedge.jpg
   https://us1-photo.nextdoor.com/business_gallery/5d/05/5d0568ede03476468295a89e7558e412.jpeg
 images/white-picket-fence.jpg
   https://us1-photo.nextdoor.com/business_gallery/77/01/7701840dae34bd3a8e4a93fe8bd996e6.jpeg
+images/brand-mark.png, images/favicon-64.png, apple-touch-icon.png
+  The figure from the flyer above (cleaned and cropped)
+og-image.jpg
+  Social sharing image, using pergola-shade-gravel-yard.jpg and the flyer figure
